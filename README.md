@@ -1,6 +1,5 @@
 # SpaceAPI WebApp
-Personal Project built with the Flask framework, HTML, and CSS. The application is a web app that fetches information from various API's containing information and data about space
-,parses through the data and displays it on the site. There is interactivity involved such using buttons or forms to have the user choose which data they want to see. 
+Personal Project built with the Flask framework, HTML, and CSS. The application is a web app that fetches information from various API's containing information and data about space, parses through the data and displays it on the site. There is interactivity involved such as using buttons or forms to have the user choose which data they want to see. 
 
 # Concepts Applied
 The key concepts used in the project are:
