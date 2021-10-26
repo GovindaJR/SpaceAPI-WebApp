@@ -21,7 +21,7 @@ The key concepts used in the project are:
 
 # Features to be Implemented
 - Using Google Maps API to show the current exact location of the International Space Station.
-- Use data to fetch data about weather on different planets.
+- Use API to fetch data about weather on different planets.
 - Create a page that compiles information about blogs and articles related to space. 
 
 # API References
