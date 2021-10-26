@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Aurora Borealis Page{% endblock %}
+
+{% block body %}
+<div class="section">
+    <h1 class="heading">Aurora Borealis</h1>
+        <p class="article-text">Named after the Roman Goddess of Dawn, Aurora and the Greek God of the northern winds,
+            Borealis, The northern lights, or the aurora borealis, are the beautiful dancing waves of light that
+            have captivated people for millennia.
+        </p>
+</div>
+
+
+
+<div class="section">
+    <p class="article-text">Select a location to see an image taken from an Aurora Borealis camera at that location:
+    (NOTE: SOME MAYBE UNAVAILABLE)</p>
+
+    {% if show_image%}
+        <img class ="location-image"  src="{{url_for('static', filename= value + '.png')}}" >
+    {% endif %}
+    <div class="drop-down-form">
+        <label for="location-select">Choose location:</label>
+        <form method="post">
+            <select  name="location_form" id="location-select">
+                <option value="">--Please select location--</option>
+
+                {% for id, name in images.items() %}
+                    <option value="{{id}}">{{name}}</option>
+                {%endfor%} </select>
+
+            <button class="form-button">Get Image</button>
+        </div>
+    </form>
+</div>
+
+<div class="section">
+    <p class="article-text">Here are the locations of all the major Aurora Borealis hunting spots:</p>
+
+    {% for name, description in locations.items() %}
+        <p>{{name}}</p>
+        <ul>Located in: {{description}}</ul>
+        <br>
+
+    {%endfor%}
+</div>
+
+
+
+{% endblock %}

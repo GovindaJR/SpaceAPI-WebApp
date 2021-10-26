@@ -1,0 +1,5 @@
+people in ISS http://api.open-notify.org/astros.json
+location of ISS http://api.open-notify.org/iss-now.json
+weather data MAAS2 API
+news https://api.spaceflightnewsapi.net/v3/documentation
+NASA https://api.nasa.gov/

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}ISS Page{% endblock %}
+
+{% block body %}
+<div class="section">
+    <h1 class="heading">International Space Station</h1>
+        <p class="article-text">The International Space Station is a modular space station in low Earth orbit. It
+         flies 400 km high at speeds that defy gravity – literally. At 28,800 km/h it only takes 92 minutes for the
+            weightless laboratory to make a complete circuit of Earth. Astronauts working and living on the Station
+            experience 16 sunrises and sunsets each day.
+        </p>
+</div>
+
+<div class="section" >
+    <p>Here are all the people who are currently in the International Space Station:</p>
+    There are currently <strong>{{num_people}}</strong> people on the Space Station</p>
+
+    {% for person in people %}
+        <ul>{{person}}</ul>
+        <br>
+    {%endfor%}
+
+</div>
+
+<div class="section" >
+    <p>Here is the location of the International Space Station RIGHT NOW!</p>
+</div>
+
+
+{% endblock %}
