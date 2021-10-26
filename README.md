@@ -3,9 +3,9 @@ Personal Project built with the Flask framework, HTML, and CSS. The application 
 
 # Concepts Applied
 The key concepts used in the project are:
-- Using the requests library to fetch information from API's.
+- Using the requests library to fetch information from APIs.
 - Parsing through JSON data 
-- Downloading image data from API's
+- Downloading image data from APIs
 - Template & template inheritance
 - HTML and CSS design
 - Integrating with Bootstrap
@@ -21,7 +21,7 @@ The key concepts used in the project are:
 
 # Features to be Implemented
 - Using Google Maps API to show the current exact location of the International Space Station.
-- Use API to fetch data about weather on different planets.
+- Use API(s) to fetch data about weather on different planets.
 - Create a page that compiles information about blogs and articles related to space. 
 
 # API References
